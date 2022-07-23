@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/b2231ac62a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Lista de Tareas - Desafío 5</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="myDIV" class="header">
+        <h2>Lista de Tareas</h2>
+        <p id="total">Total:</p>
+
+        <input type="text" id="tarea" placeholder="Tarea..." />
+        <button id="btn-agregar" class="addBtn btn" onclick="agregarTarea(event)">Agregar</button>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">Tarea</th>
+            <!-- Agregamos un 3ro para la acción -->
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <!-- Cambiamos ul por tbody -->
+        <!-- <tbody id="lista-tareas"></tbody> -->
+      </table>
+      <ul id="lista-tareas"></ul>
+    </div>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
